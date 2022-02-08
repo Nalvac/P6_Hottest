@@ -1,0 +1,70 @@
+Open Web Application Security Project
+
+Il existe trois principes de sécurité qui peuvent être appliqués pour garantir la sécurité d’une application ou d’une infrastructure.
+
+La confidentialité. C'est l'assurance que les personnes non autorisées n'accèdent pas à des informations sensibles.
+
+L'intégrité. Elle permet d'être sûr que les données sont fiables et n'ont pas été modifiées par des personnes non autorisées.
+
+La disponibilité. C'est l’assurance qu'il n'y a pas de perturbation d'un service ou de l'accessibilité aux données.
+
+
+le règlement général sur la protection des données (RGPD)
+Il modifie la manière dont les données personnelles sont stockées et utilisées et la façon dont les entreprises les traitent.
+
+Découvrez la norme PCI DSS
+La norme Payment Card Industry Data Security Standard (PCI DSS) est une norme établie pour toutes les entreprises qui traitent des données bancaires.
+
+Découvrez l'OWASP
+L’Open Web Application Security Project (OWASP) est un organisme impartial, mondial et sans but lucratif. Il évalue les dix principaux risques pour la sécurité des applications web et préconise un développement logiciel sécurisé.
+
+OWASP Top Ten
+
+l'injection ;
+
+le piratage de session ;
+
+l'exposition de données sensibles ;
+
+les entités externes XML (XXE) ;
+
+le contournement des contrôles d'accès ;
+
+security misconfiguration ou mauvaise configuration de sécurité ;
+
+Cross-Site Scripting (XSS) ou failles XSS ;
+
+la désérialisation non sécurisée ;
+
+l'utilisation de composants présentant des vulnérabilités connues ;
+
+le manque de surveillance et de monitoring.
+
+
+Sécurisez une application contre l’injection SQL
+
+Pour garantir une protection contre l’injection SQL, il est possible d’utiliser un pare-feu d'application web ou WAF, pour Web Application Firewall
+
+les types d'attaques 
+
+nous avons : la technique de force brute, c’est-à-dire l’utilisation d’une multitude de couples identifiant/mot de passe de manière automatique, jusqu’à obtenir le bon
+
+une attaque appelée credential stuffing peut être utilisée pour essayer toutes les combinaisons de noms d'utilisateur et de mots de passe, jusqu'à ce que le pirate s'authentifie.
+
+ASP.NET Core IdentityFramework peut être intégré dans votre application web pour personnaliser vos besoins d'authentification. L'ajout d'ASP.NET Core IdentityServer vous permet d'utiliser les techniques de développement sécurisé pour l'authentification par jeton.
+
+Ruby a des fonctions (gems) comme omniauth qui peuvent être implémentées pour l'authentification.
+
+Java a javax.security.auth, et l'API Java Authentication and Authorization Service (JAAS), qui peuvent configurer votre authentification de la bonne façon !
+
+PHP a PHPSec peuvent être utilisés pour gérer la sécurité et les sessions.
+
+Utilisez le HTTPS pour l'ensemble de votre site, même s'il ne contient pas de données sensibles.
+
+Utilisez les requêtes GET pour récupérer les informations et POST pour modifier les informations.
+
+Sécurisez vos cookies pour qu'ils soient transmis par l'en-tête et via HTTPS.
+
+Sécurisez vos sessions en ajoutant une date d'expiration, en sécurisant l'ID et en ne mettant pas cet ID dans l'URL.
+
+L'utilisation du chiffrement dans la couche Transport peut prévenir les attaques MITM !
